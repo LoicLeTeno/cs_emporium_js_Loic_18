@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../../public/fonts/Poppins/Poppins-Regular.ttf);
+}
+
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -16366,4 +16371,13 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+header #titre {
+  font-family: "poppins";
+  font-size: 60px;
+}
+
+header nav {
+  font-size: 13px;
 }
