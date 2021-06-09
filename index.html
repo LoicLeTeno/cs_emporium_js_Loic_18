@@ -14,12 +14,13 @@
 <body>
     <!-- HEADER -->
     <header class="text-center">
-        <div id="titre">
-            <p class="fw-bold">emporium.</p>
+        <div id="titre" class="w">
+            <p class="fw-bold my-5">emporium<span>ioii</span></p>
+
         </div>
 
         <!-- NAV -->
-        <nav class="container d-flex justify-content-center">
+        <nav class="container d-flex justify-content-center align-items-center my-3">
             <a class="text-dark text-decoration-none mx-5" href="">HOME</a>
 
             <a class="text-dark text-decoration-none mx-5" href="">PRODUCT</a>
@@ -32,12 +33,16 @@
 
             <a class="text-dark text-decoration-none mx-5" href="">CONTACT</a>
 
-            <div class="input_nav mx-5">
-                <input class="bg-white border-1" type="button">dzdzdz</input>
+            <div class="input_nav d-flex align-items-center mx-4">
+                <div class="mx-1">
+                    <input class="input_white" style="width: 20px; height: 20px;" type="button"></input>
+                </div>
 
-                <input class="bg-dark border-1" type="button">dzd</input>
-
-                <input class="bg-secondary text-white border-0" type="button" value="CONNEXION"></input>
+                <div class="mx-1">
+                    <input class="input_dark" style="width: 20px; height: 20px;" type="button"></input>
+                </div>
+                
+                <input class="bg-secondary text-white border p-2" type="button" value="CONNEXION"></input>
             </div>
         </nav>
     </header>
@@ -45,28 +50,46 @@
     <!-- SECTION SHOP AT EMPORIUM -->
     <section id="sec_banniere">
         <!-- TEXTE ET BG-IMAGE -->
-        <div class="bg_image1">
-            <p>Shop at</p>
+        <div class="bg_image1 row py-5 mx-0">
+            <div class="col-2 px-0"></div>
 
-            <p>emporium.</p>
+            <div class="col-4 d-flex justify-content-center align-items-center px-0">
+                <div>
+                    <p class="m-0">Shop at</p>
 
-            <p>a wonderful sere,ity has token possession of my my entire soul, like sweet morning of spring which i enjoy with my.</p>
+                    <img src="./public/img/logo.png" alt="">
+    
+                    <p class="text-secondary">A wonderful serenity has token possession of my my entire soul, like <br> sweet morning of spring which i enjoy with my.</p>
+    
+                    <button class="btn rounded-pill mt-3 px-5 py-2">SALE ITEMS</button>
+                </div>
+            </div>
 
-            <button>SALE ITEMS</button>
+            <div class="col-4 px-0">
+                <img src="./public/img/slider-1.jpg" class="img-fluid" style="width: 100%; height: 100%;" alt="">
+            </div>
+
+            <div class="col-2 px-0"></div>
         </div>
     
         <!-- 3 CARDS -->
-        <div class="3cards">
-            <div class="card1">
-                <p>Living Room</p>
+        <div class="cards row mx-0">
+            <div class="col-4">
+                <div class="card1 d-flex justify-content-center align-items-center mx-1">
+                    <p class="text-white m-0">Living Room</p>
+                </div>
             </div>
 
-            <div class="card2">
-                <p>Sale Items</p>
+            <div class="col-4">
+                <div class="card2 d-flex justify-content-center align-items-center mx-1">
+                    <p class="text-white m-0">Sale Items</p>
+                </div>
             </div>
 
-            <div class="card3">
-                <p>Clothes</p>
+            <div class="col-4">
+                <div class="card3 d-flex justify-content-center align-items-center mx-1">
+                    <p class="text-white m-0">Clothes</p>
+                </div>
             </div>
         </div>
     </section>

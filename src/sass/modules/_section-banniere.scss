@@ -1,0 +1,62 @@
+// SECTION SHOT AT EMPORIUM
+.bg_image1 {
+    // background-image: url(../../../public/img/slider-1.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    div:nth-of-type(1) {
+        background-color: $baniereColor;
+    }
+    div:nth-of-type(2) {
+        background-color: $baniereColor;
+
+        p:nth-of-type(1) {
+            font-family: $poppins;
+            font-size: 50px;
+    
+            color: $pamplemousse;
+        }
+        img {
+            height: 100px;
+        }
+        button {
+            background-color: $pamplemousse;
+            color: white;
+        }
+    }
+    div:nth-of-type(3) {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div:nth-of-type(4) {
+        background-color: $baniereColor;
+    }
+}
+.cards {
+    .card1 {
+        background-image: url(../../../public/img/services/service-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+
+        width: 100%;
+        height: 150px;
+    }
+    .card2 {
+        background-image: url(../../../public/img/services/service-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+
+        width: 100%;
+        height: 150px;
+    }
+    .card3 {
+        background-image: url(../../../public/img/services/slider-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+
+        width: 100%;
+        height: 150px;
+    }
+}
