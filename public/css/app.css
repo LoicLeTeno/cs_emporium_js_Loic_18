@@ -16373,8 +16373,16 @@ fieldset:disabled .btn {
   }
 }
 
-header #titre {
+body {
   font-family: "poppins";
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+header #titre {
   font-size: 80px;
 }
 
@@ -16382,6 +16390,58 @@ header #titre span {
   background-color: black;
   color: black;
   font-size: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer #copyright {
+  background-color: black;
 }
 
 .bg_image1 div:nth-of-type(1) {
@@ -16393,7 +16453,6 @@ header #titre span {
 }
 
 .bg_image1 div:nth-of-type(2) p:nth-of-type(1) {
-  font-family: "poppins";
   font-size: 50px;
   color: #e6443f;
 }
@@ -16416,29 +16475,227 @@ header #titre span {
   background-color: #f3f3f3;
 }
 
-.cards .card1 {
-  background-image: url(../../../public/img/services/service-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  width: 100%;
-  height: 150px;
+.cards div {
+  transition: transform 1s, filter 1s;
 }
 
-.cards .card2 {
-  background-image: url(../../../public/img/services/service-2.jpg);
+.cards div div {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   width: 100%;
-  height: 150px;
+  height: 300px;
 }
 
-.cards .card3 {
-  background-image: url(../../../public/img/services/slider-3.jpg);
+.cards div div p::after {
+  content: "";
+  background-color: white;
+  width: 500px;
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 120%;
+  transition: width 1s;
+}
+
+.cards .hover div {
+  filter: brightness(50%);
+  transform: scale(150%);
+}
+
+.cards .hover p::after {
+  width: 50px;
+}
+
+#sec_products_cards .ligne1 .produit2 .sale {
+  background-color: #e6443f;
+  color: white;
+  line-height: 40px;
+}
+
+#sec_products_cards .ligne1 .produit2 div p:nth-child(2) {
+  color: #e6443f;
+}
+
+#sec_products_cards .ligne1 .produit2 div p:nth-child(2) s {
+  color: grey;
+}
+
+#sec_products_cards .ligne2 .produit4 .sale {
+  background-color: #e6443f;
+  color: white;
+  line-height: 40px;
+}
+
+#sec_products_cards .ligne2 .produit4 div p:nth-child(2) {
+  color: #e6443f;
+}
+
+#sec_products_cards .ligne2 .produit4 div p:nth-child(2) s {
+  color: grey;
+}
+
+#sec_products_cards .prix {
+  color: #e6443f;
+}
+
+#sec_discover {
+  background-image: url(../../../public/img/cta-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  width: 100%;
-  height: 150px;
+  background-position: center;
+}
+
+#sec_discover div p {
+  color: white;
+  font-size: 50px;
+}
+
+#sec_discover div button {
+  color: white;
+  background-color: #e6443f;
+}
+
+#sec_hot_fashion {
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+#sec_hot_fashion * {
+  box-sizing: border-box;
+}
+
+#sec_hot_fashion .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#sec_hot_fashion .mySlides {
+  display: none;
+}
+
+#sec_hot_fashion .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#sec_hot_fashion .active,
+#sec_hot_fashion .dot:hover {
+  background-color: #717171;
+}
+
+#sec_hot_fashion .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#sec_footer div .publication1 {
+  background-color: #f8f9fa;
+}
+
+#sec_footer div .publication1 p:nth-of-type(2) {
+  color: #6c757d;
+}
+
+#sec_footer div .publication1 button {
+  background-color: #212529;
+  color: white;
+}
+
+#sec_footer div .publication1:hover {
+  background-color: #dc3545;
+}
+
+#sec_footer div .publication1:hover i {
+  color: white;
+}
+
+#sec_footer div .publication1:hover p {
+  color: white;
+}
+
+#sec_footer div .publication1:hover button {
+  background-color: white;
+  color: #212529;
+}
+
+#sec_footer div .publication2 {
+  background-color: #f8f9fa;
+}
+
+#sec_footer div .publication2 p:nth-of-type(2) {
+  color: #6c757d;
+}
+
+#sec_footer div .publication2 button {
+  background-color: #212529;
+  color: white;
+}
+
+#sec_footer div .publication2:hover {
+  background-color: #dc3545;
+}
+
+#sec_footer div .publication2:hover i {
+  color: white;
+}
+
+#sec_footer div .publication2:hover p {
+  color: white;
+}
+
+#sec_footer div .publication2:hover button {
+  background-color: white;
+  color: #212529;
+}
+
+#sec_footer div .publication3 {
+  background-color: #f8f9fa;
+}
+
+#sec_footer div .publication3 p:nth-of-type(2) {
+  color: #6c757d;
+}
+
+#sec_footer div .publication3 button {
+  background-color: #212529;
+  color: white;
+}
+
+#sec_footer div .publication3:hover {
+  background-color: #dc3545;
+}
+
+#sec_footer div .publication3:hover i {
+  color: white;
+}
+
+#sec_footer div .publication3:hover p {
+  color: white;
+}
+
+#sec_footer div .publication3:hover button {
+  background-color: white;
+  color: #212529;
 }

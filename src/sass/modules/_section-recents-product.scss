@@ -1,0 +1,41 @@
+#sec_products_cards {
+    .ligne1 {
+        .produit2 {
+            .sale {
+                background-color: $pamplemousse;
+                color: white;
+
+                line-height: 40px;
+            }
+            div {
+                p:nth-child(2) {
+                    s {
+                        color: grey;
+                    }
+                    color: $pamplemousse;
+                }
+            }
+        }
+    }
+    .ligne2 {
+        .produit4 {
+            .sale {
+                background-color: $pamplemousse;
+                color: white;
+
+                line-height: 40px;
+            }
+            div {
+                p:nth-child(2) {
+                    s {
+                        color: grey;
+                    }
+                    color: $pamplemousse;
+                }
+            }
+        }
+    }
+    .prix {
+        color: $pamplemousse;
+    }
+}

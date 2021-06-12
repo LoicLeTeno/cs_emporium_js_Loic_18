@@ -1,0 +1,83 @@
+#sec_footer {
+    div {
+        .publication1 {
+            background-color: $light;
+
+            p:nth-of-type(2) {
+                color: $secondary;
+            }
+            button {
+                background-color: $dark;
+                color: white;
+            }
+        }
+        .publication1:hover {
+            background-color: $danger;
+
+            i {
+                color: white;
+            }
+            p {
+                color: white;
+            }
+            button {
+                background-color: white;
+                color: $dark;
+            }
+        }
+    }
+    div {
+        .publication2 {
+            background-color: $light;
+
+            p:nth-of-type(2) {
+                color: $secondary;
+            }
+            button {
+                background-color: $dark;
+                color: white;
+            }
+        }
+        .publication2:hover {
+            background-color: $danger;
+
+            i {
+                color: white;
+            }
+            p {
+                color: white;
+            }
+            button {
+                background-color: white;
+                color: $dark;
+            }
+        }
+    }
+    div {
+        .publication3 {
+            background-color: $light;
+
+            p:nth-of-type(2) {
+                color: $secondary;
+            }
+            button {
+                background-color: $dark;
+                color: white;
+            }
+        }
+        .publication3:hover {
+            background-color: $danger;
+
+            i {
+                color: white;
+            }
+            p {
+                color: white;
+            }
+            button {
+                background-color: white;
+                color: $dark;
+            }
+        }
+    }
+}

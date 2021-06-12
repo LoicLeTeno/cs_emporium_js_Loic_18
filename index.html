@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- LINK -->
+    <!-- LINK -->
     <link rel="stylesheet" href="./public/css/app.css">
     <!-- sass --watch src/sass/app.scss public/css/app.css -->
 
     <title>Projet Emporium</title>
 </head>
-<body>
+
+<body class="">
     <!-- HEADER -->
     <header class="text-center">
         <div id="titre" class="w">
             <p class="fw-bold my-5">emporium<span>ioii</span></p>
-
         </div>
 
         <!-- NAV -->
-        <nav class="container d-flex justify-content-center align-items-center my-3">
+        <nav class="d-flex justify-content-center align-items-center my-3">
             <a class="text-dark text-decoration-none mx-5" href="">HOME</a>
 
             <a class="text-dark text-decoration-none mx-5" href="">PRODUCT</a>
@@ -35,16 +36,57 @@
 
             <div class="input_nav d-flex align-items-center mx-4">
                 <div class="mx-1">
-                    <input class="input_white" style="width: 20px; height: 20px;" type="button"></input>
+                    <button class="input_light btn border-secondary bg-light" style="width: 25px; height: 25px;"
+                        type="button"></button>
                 </div>
 
                 <div class="mx-1">
-                    <input class="input_dark" style="width: 20px; height: 20px;" type="button"></input>
+                    <button class="input_dark btn border-secondary bg-dark" style="width: 25px; height: 25px;"></button>
                 </div>
-                
-                <input class="bg-secondary text-white border p-2" type="button" value="CONNEXION"></input>
+
+                <button id="myBtn" class="btn bg-secondary text-light mx-2 p-2">CONNECTION</button>
             </div>
         </nav>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <form id="connexion" class="d-flex flex-column container" action="form">
+                    <label for="id">ID</label>
+                    <input name="id" type="text">
+
+                    <label for="password">Password</label>
+                    <input name="password" type="password">
+
+                    <button>connexion</button>
+
+                    <a>vous inscrire</a>
+                </form>
+
+                <form id="inscription" class="d-none flex-column container" action="form">
+                    <label for="prenom">prenom</label>
+                    <input name="prenom" type="text">
+
+                    <label for="nom">nom</label>
+                    <input name="nom" type="text">
+
+                    <label for="email">email</label>
+                    <input name="email" type="email">
+
+                    <label for="password">Password</label>
+                    <input name="password" type="password">
+                    <label for="password">Password</label>
+                    <input name="password" type="password">
+
+                    <button>inscription</button>
+
+                    <a>vous connecter</a>
+                </form>
+            </div>
+        </div>
     </header>
 
     <!-- SECTION SHOP AT EMPORIUM -->
@@ -58,9 +100,10 @@
                     <p class="m-0">Shop at</p>
 
                     <img src="./public/img/logo.png" alt="">
-    
-                    <p class="text-secondary">A wonderful serenity has token possession of my my entire soul, like <br> sweet morning of spring which i enjoy with my.</p>
-    
+
+                    <p class="text-secondary">A wonderful serenity has token possession of my my entire soul, like <br>
+                        sweet morning of spring which i enjoy with my.</p>
+
                     <button class="btn rounded-pill mt-3 px-5 py-2">SALE ITEMS</button>
                 </div>
             </div>
@@ -71,147 +114,167 @@
 
             <div class="col-2 px-0"></div>
         </div>
-    
+
         <!-- 3 CARDS -->
         <div class="cards row mx-0">
             <div class="col-4">
-                <div class="card1 d-flex justify-content-center align-items-center mx-1">
-                    <p class="text-white m-0">Living Room</p>
+                <div
+                    class="card d-flex justify-content-center align-items-center position-relative overflow-hidden mx-1">
+                    <div class="position-absolute"
+                        style="background-image: url(./public/img/services/service-1.jpg); height: 100%; width: 100%;">
+                    </div>
+
+                    <p class="position-relative text-white fs-1 m-0">Living Room</p>
                 </div>
             </div>
 
             <div class="col-4">
-                <div class="card2 d-flex justify-content-center align-items-center mx-1">
-                    <p class="text-white m-0">Sale Items</p>
+                <div
+                    class="card d-flex justify-content-center align-items-center position-relative overflow-hidden mx-1">
+                    <div class="position-absolute"
+                        style="background-image: url(./public/img/services/service-2.jpg); height: 100%; width: 100%;">
+                    </div>
+
+                    <p class="position-relative text-white fs-1 m-0">Sale Items</p>
                 </div>
             </div>
 
             <div class="col-4">
-                <div class="card3 d-flex justify-content-center align-items-center mx-1">
-                    <p class="text-white m-0">Clothes</p>
+                <div
+                    class="card d-flex justify-content-center align-items-center position-relative overflow-hidden mx-1">
+                    <div class="position-absolute"
+                        style="background-image: url(./public/img/services/slider-3.jpg); height: 100%; width: 100%;">
+                    </div>
+
+                    <p class="position-relative text-white fs-1 m-0">Clothes</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION RECENTS PRODUCT -->
-    <section id="sec_products_cards">
+    <section id="sec_products_cards" class="container">
+        <h3>Recents Products</h3>
         <!-- LIGNE 1 -->
-        <div class="ligne1">
+        <div class="ligne1 row mx-0">
             <!-- produit 1 -->
-            <div class="produit1">
+            <div class="produit1 col-4">
                 <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit1">
-                    <p>Luxury Sofa</p>
+                <div class="detail_produit1 text-center fw-bold">
+                    <p class="text-dark">Luxury Sofa</p>
 
-                    <p>$600.00</p>
+                    <p class="prix">$600.00</p>
                 </div>
             </div>
 
             <!-- produit 2 -->
-            <div class="produit2">
+            <div class="produit2 col-4">
                 <img src="./public/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
 
-                <div>
-                    <div class="sale">
-                        <p>SALE!</p>
+                <div class="row mx-0">
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <p class="sale rounded-circle p-3">SALE!</p>
                     </div>
 
-                    <div class="detail_produit2">
-                        <p>Leather Gloves</p>
+                    <div class="detail_produit2 d-flex justify-content-start fw-bold col-6">
+                        <div class="text-center">
+                            <p class="text-dark">Leather Gloves</p>
 
-                        <p><s>$34.00</s> $27.00</p>
+                            <p class="prix"><s>$34.00</s> $27.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- produit 3 -->
-            <div class="produit3">
+            <div class="produit3 col-4">
                 <img src="./public/img/products_mini/product-cups.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit3">
-                    <p>Colorful Bowl</p>
+                <div class="detail_produit3 text-center fw-bold">
+                    <p class="text-dark">Colorful Bowl</p>
 
-                    <p>$18.00</p>
+                    <p class="prix">$18.00</p>
                 </div>
             </div>
         </div>
 
         <!-- LIGNE 2 -->
-        <div class="ligne2">
+        <div class="ligne2 row mx-0">
             <!-- produit 4 -->
-            <div class="produit4">
+            <div class="produit4 col-4">
                 <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid" alt="">
 
-                <div>
-                    <div class="sale">
-                        <p>SALE!</p>
+                <div class="row mx-0">
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <p class="sale rounded-circle p-3">SALE!</p>
                     </div>
 
-                    <div class="detail_produit4">
-                        <p>Women Bag</p>
+                    <div class="detail_produit4 d-flex justify-content-start fw-bold col-6">
+                        <div class="text-center">
+                            <p class="text-dark">Women Bag</p>
 
-                        <p><s>$420.00</s> $350.00</p>
+                            <p class="prix"><s>$420.00</s> $350.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- produit 5 -->
-            <div class="produit5">
+            <div class="produit5 col-4">
                 <img src="./public/img/products_mini/product-tshitr.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit5">
-                    <p>Minimal T-Shirt</p>
+                <div class="detail_produit5 text-center fw-bold">
+                    <p class="text-dark">Minimal T-Shirt</p>
 
-                    <p>$15.00</p>
+                    <p class="prix">$15.00</p>
                 </div>
             </div>
 
             <!-- produit 6 -->
-            <div class="produit6">
+            <div class="produit6 col-4">
                 <img src="./public/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit6">
-                    <p>Plates Set</p>
+                <div class="detail_produit6 text-center fw-bold">
+                    <p class="text-dark">Plates Set</p>
 
-                    <p>$30.00</p>
+                    <p class="prix">$30.00</p>
                 </div>
             </div>
         </div>
 
         <!-- LIGNE 3 -->
-        <div class="ligne3">
+        <div class="ligne3 row mx-0">
             <!-- produit 7 -->
-            <div class="produit7">
+            <div class="produit7 col-4">
                 <img src="./public/img/products_mini/product-modern-sofa.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit7">
-                    <p>Modern Sofa</p>
+                <div class="detail_produit7 text-center fw-bold">
+                    <p class="text-dark">Modern Sofa</p>
 
-                    <p>$900.00</p>
+                    <p class="prix">$900.00</p>
                 </div>
             </div>
 
             <!-- produit 8 -->
-            <div class="produit8">
+            <div class="produit8 col-4">
                 <img src="./public/img/products_mini/product-bed.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit8">
-                    <p>Bed Linen</p>
+                <div class="detail_produit8 text-center fw-bold">
+                    <p class="text-dark">Bed Linen</p>
 
-                    <p>$79.00</p>
+                    <p class="prix">$79.00</p>
                 </div>
             </div>
 
             <!-- produit 9 -->
-            <div class="produit9">
+            <div class="produit9 col-4">
                 <img src="./public/img/products_mini/product-shoes.jpg" class="img-fluid" alt="">
 
-                <div class="detail_produit9">
-                    <p>Minimal Shoes</p>
+                <div class="detail_produit9 text-center fw-bold">
+                    <p class="text-dark">Minimal Shoes</p>
 
-                    <p>$60.00</p>
+                    <p class="prix">$60.00</p>
                 </div>
             </div>
         </div>
@@ -219,57 +282,95 @@
 
     <!-- SECTION DISCOVER THOUSANDS -->
     <section id="sec_discover">
-        <div>
-            <p>Discover Thousands Of Great Products</p>
+        <div class="d-flex justify-content-sm-center align-items-center" style="height: 800px;">
+            <div class="text-center">
+                <p>Discover Thousands Of Great Products</p>
 
-            <button>LEARN MORE</button>
+                <button class="btn ">LEARN MORE</button>
+            </div>
         </div>
     </section>
 
     <!-- SECTION HOT FASHION PRODUCTS -->
     <section id="sec_hot_fashion">
-        <p>Hot Fashion Products</p>
-
-        
+        <h5 class="text-center text-dark fw-bold">Hot Fashion Products</h5>
 
         <!-- CAROUSSEL -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade show">
+                    <img src="./public/img/products_mini/product-bag.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+            </div>
 
+            <div class="mySlides fade">
+                <img src="./public/img/products_mini/product-bed.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
 
+            <div class="mySlides fade">
+                <img src="./public/img/products_mini/product-cups.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
 
+            <div class="mySlides fade">
+                <img src="./public/img/products_mini/product-gloves.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" data-target="1"></span>
+            <span class="dot" data-target="2"></span>
+            <span class="dot" data-target="3"></span>
+            <span class="dot" data-target="4"></span>
+        </div>
     </section>
 
     <!-- SECTION FOOTER -->
     <section id="sec_footer">
-        <div class="3publications">
-            <div class="publication1">
-                <i></i>
+        <div class="3publications row mx-0">
+            <div class="col-4">
+                <div class="publication1 text-center">
+                    <i id="logo-font1" class="far fa-check-circle fs-3"></i>
 
-                <p>TRSUTED BY 10,000+ CUSTOMERS</p>
+                    <p class="fw-bold">TRSUTED BY 10,000+ CUSTOMERS</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis molestiae beatae harum eius nostrum dolores ut.</p>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
+                        molestiae beatae harum eius nostrum dolores ut.</p>
 
-                <button>LEARN MORE</button>
+                    <button class="btn">LEARN MORE</button>
+                </div>
             </div>
 
-            <div class="publication2">
-                <i></i>
+            <div class="col-4">
+                <div class="publication2 text-center">
+                    <i id="logo-font2" class="fas fa-paper-plane fs-3"></i>
 
-                <p>VERY FAST SHIPPING</p>
+                    <p class="fw-bold">VERY FAST SHIPPING</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis molestiae beatae harum eius nostrum dolores ut.</p>
-                
-                <button>LEARN MORE</button>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
+                        molestiae beatae harum eius nostrum dolores ut.</p>
+
+                    <button class="btn">LEARN MORE</button>
+                </div>
             </div>
 
-            <div class="publication3">
-                <i></i>
+            <div class="col-4">
+                <div class="publication3 text-center">
+                    <i id="logo-font3" class="far fa-check-circle fs-3"></i>
 
-                <p>TRSUTED BY 10,000+ CUSTOMERS</p>
+                    <p class="fw-bold">TRSUTED BY 10,000+ CUSTOMERS</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis molestiae beatae harum eius nostrum dolores ut.</p>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
+                        molestiae beatae harum eius nostrum dolores ut.</p>
 
-                <button>LEARN MORE</button>
+                    <button class="btn">LEARN MORE</button>
+                </div>
             </div>
         </div>
     </section>
@@ -277,59 +378,68 @@
     <!-- FOOTER -->
     <footer>
         <!-- HAUT-FOOTER -->
-        <div id="haut_footer">
-            <div class="about_us">
-                <p>ABOUT US</p>
+        <div id="haut_footer" class="bg-dark">
+            <div class="container row mx-auto">
+                <div class="about_us col-4">
+                    <p class="text-light">ABOUT US</p>
 
-                <P>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of</P>
-            </div>
+                    <P class="text-secondary">A wonderful serenity has taken possession of my entire soul, like these
+                        sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of
+                        existence in this spot, which was created for the bliss of</P>
+                </div>
 
-            <div class="recents_posts">
-                <p>RECENTS POSTS</p>
+                <div class="recents_posts col-4">
+                    <p class="text-light">RECENTS POSTS</p>
 
-                <ul>
-                    <li>>Hello World</li>
+                    <ul class="text-light p-0" style="list-style-type: none;">
+                        <li>> Hello World</li>
 
-                    <li>>Wonderful serenity has taken</li>
+                        <li>> Wonderful serenity has taken</li>
 
-                    <li>>in my soul and absorb its power</li>
+                        <li>> in my soul and absorb its power</li>
 
-                    <li>>I hear the buzz of the little</li>
-                </ul>
-            </div>
+                        <li>> I hear the buzz of the little</li>
+                    </ul>
+                </div>
 
-            <div class="tag_cloud">
-                <button>business</button>
-                
-                <button>confidence</button>
-                
-                <button>gadgets</button>
-                
-                <button>identity</button>
-                
-                <button>logo</button>
-                
-                <button>photography</button>
-                
-                <button>time</button>
-                
-                <button>trips</button>
-                
-                <button>works</button>
-                
-                <button>work space</button>
+                <div class="tag_cloud col-4">
+                    <p class="text-light">TAG CLOUD</p>
+
+                    <div>
+                        <button class="btn text-secondary border-secondary mx-1 my-1">business</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">confidence</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">gadgets</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">identity</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">logo</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">photography</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">time</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">trips</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">works</button>
+
+                        <button class="btn text-secondary border-secondary mx-1 my-1">work space</button>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- COPYRIGHT -->
-        <div>
-            <p>COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
+        <div id="copyright" class="">
+            <p class="text-secondary text-center py-4 m-0">COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
         </div>
     </footer>
 
-<!-- SCRIPT -->
+    <!-- SCRIPT -->
     <script src="./public/js/main.js" type="module"></script>
-<!-- SCRIPT BOOTSTRAP -->
+    <!-- SCRIPT BOOTSTRAP -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

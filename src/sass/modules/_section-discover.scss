@@ -1,0 +1,18 @@
+#sec_discover {
+    background-image: url(../../../public/img/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    div {
+        p {
+            color: white;
+
+            font-size: 50px;
+        }
+        button {
+            color: white;
+            background-color: $pamplemousse;
+        }
+    }
+}
