@@ -16392,6 +16392,11 @@ header #titre span {
   font-size: 8px;
 }
 
+header #titre .span-2 {
+  background-color: white;
+  color: white;
+}
+
 header nav {
   background-color: white;
 }
@@ -16418,7 +16423,7 @@ header nav a {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 30%;
+  width: 50%;
 }
 
 .close {
@@ -16438,6 +16443,10 @@ footer #copyright {
   background-color: black;
 }
 
+.bg_image1 {
+  background-color: #f3f3f3;
+}
+
 .bg_image1 div:nth-of-type(1) {
   background-color: #f3f3f3;
 }
@@ -16446,8 +16455,7 @@ footer #copyright {
   background-color: #f3f3f3;
 }
 
-.bg_image1 div:nth-of-type(2) p:nth-of-type(1) {
-  font-size: 50px;
+.bg_image1 div:nth-of-type(2) h1, .bg_image1 div:nth-of-type(2) .h1 {
   color: #e6443f;
 }
 

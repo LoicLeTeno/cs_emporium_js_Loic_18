@@ -3,8 +3,11 @@
 @import "./_footer.scss";
 
 // SECTIONS
-@import "./section-banniere";
-@import "./section-recents-product";
-@import "./section-discover";
-@import "./section-fashion-products";
-@import "./section-footer";
+@import "./section-banniere.scss";
+@import "./section-recents-product.scss";
+@import "./section-discover.scss";
+@import "./section-fashion-products.scss";
+@import "./section-footer.scss";
+
+// MEDIA QUERIES
+@import "./media-modal.scss"

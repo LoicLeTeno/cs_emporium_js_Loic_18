@@ -16,35 +16,48 @@
 <body class="">
     <!-- HEADER -->
     <header class="text-center">
-        <div id="titre" class="w">
-            <p class="fw-bold my-5">emporium<span>ioii</span></p>
+        <div id="titre" class="d-none d-md-block">
+            <p class="fw-bold mt-5 mb-0 my-lg-5">emporium<span>ioii</span></p>
+        </div>
+
+        <div id="img-titre">
+            <img src="./public/img/logo.png" class="img-fluid d-flex d-md-none mx-auto py-5" alt="">
         </div>
 
         <!-- NAV -->
-        <nav class=" d-flex justify-content-center align-items-center py-3">
-            <a class="text-decoration-none bg-transparent mx-4" href="">HOME</a>
+        <nav class="navbar navbar-expand-lg py-3">
+            <button class="navbar-toggler navbar-expand mx-auto" type="button" data-bs-toggle="collapse"
+            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i id="hamburger" class="fas fa-bars"></i></span>
+            </button>
 
-            <a class="text-decoration-none bg-transparent mx-4" href="">PRODUCT</a>
+            <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
+                <div class="navbar-nav align-items-center mx-0">
+                    <a class="text-decoration-none bg-transparent mx-4 my-3 my-lg-0" href="">HOME</a>
 
-            <a class="text-decoration-none bg-transparent mx-4" href="">BLOG</a>
-
-            <a class="text-decoration-none bg-transparent mx-4" href="">ELEMENTS</a>
-
-            <a class="text-decoration-none bg-transparent mx-4" href="">ABOUT</a>
-
-            <a class="text-decoration-none bg-transparent mx-4" href="">CONTACT</a>
-
-            <div class="input_nav d-flex align-items-center mx-4">
-                <div class="mx-1">
-                    <button class="input_light btn border-secondary bg-light" style="width: 25px; height: 25px;"
-                        type="button"></button>
+                    <a class="text-decoration-none bg-transparent mx-4 my-3 my-lg-0" href="">PRODUCT</a>
+        
+                    <a class="text-decoration-none bg-transparent mx-4 my-3 my-lg-0" href="">BLOG</a>
+        
+                    <a class="text-decoration-none bg-transparent mx-4 my-3 my-lg-0" href="">ELEMENTS</a>
+        
+                    <a class="text-decoration-none bg-transparent mx-4 my-3 my-lg-0" href="">ABOUT</a>
+        
+                    <a class="text-decoration-none bg-transparent mx-4 my-3 my-lg-0" href="">CONTACT</a>
+        
+                    <div class="input_nav d-flex align-items-center mx-4 my-4 my-lg-0">
+                        <div class="mx-1">
+                            <button class="input_light btn border-secondary bg-light" style="width: 25px; height: 25px;"
+                                type="button"></button>
+                        </div>
+        
+                        <div class="mx-1">
+                            <button class="input_dark btn border-secondary bg-dark" style="width: 25px; height: 25px;"></button>
+                        </div>
+        
+                        <button id="myBtn" class="btn bg-secondary text-light mx-2 p-2">CONNECTION</button>
+                    </div>
                 </div>
-
-                <div class="mx-1">
-                    <button class="input_dark btn border-secondary bg-dark" style="width: 25px; height: 25px;"></button>
-                </div>
-
-                <button id="myBtn" class="btn bg-secondary text-light mx-2 p-2">CONNECTION</button>
             </div>
         </nav>
 
@@ -130,14 +143,16 @@
     <!-- SECTION SHOP AT EMPORIUM -->
     <section id="sec_banniere">
         <!-- TEXTE ET BG-IMAGE -->
-        <div class="bg_image1 row pt-3 pb-5 mx-0">
-            <div class="col-0 col-lg-2 px-0 d-lg-block d-none"></div>
+        <div class="bg_image1 row mt-3 mb-5 mx-0 px-xl-0 px-5 ">
+            <div class="col-0 col-xl-2 px-0 d-lg-block d-none"></div>
 
-            <div class="col-6 col-lg-4 d-flex justify-content-end align-items-center px-0">
+            <div class="d-flex justify-content-end align-items-center col-12 col-md-6 col-xl-4 px-0 py-3 py-md-0">
                 <div>
-                    <p class="m-0">Shop at</p>
+                    <h1 class="m-0">Shop at</h1>
 
-                    <img src="./public/img/logo.png" class="img-fluid" alt="">
+                    <img src="./public/img/logo.png" class="img-fluid d-none d-md-block" alt="">
+
+                    <h1 class="d-block d-md-none fw-bold text-dark pb-2">emporium.</h1>
 
                     <p class="text-secondary">A wonderful serenity has token possession of my my entire soul, like <br>
                         sweet morning of spring which i enjoy with my.</p>
@@ -146,12 +161,12 @@
                 </div>
             </div>
 
-            <div class="col-6 col-lg-4 px-0">
+            <div class="d-none d-md-block col-0 col-md-6 col-xl-4 px-0 ">
                 <img src="./public/img/slider-1.jpg" class="img-fluid d-flex mx-xxl-auto ms-auto"
                     style="width: 70%; height: 100%;" alt="">
             </div>
 
-            <div class="col-0 col-lg-2 px-0 d-lg-block d-none"></div>
+            <div class="col-0 col-xl-2 px-0 d-lg-block d-none"></div>
         </div>
 
         <!-- 3 CARDS -->
@@ -197,7 +212,7 @@
         <!-- LIGNE 1 -->
         <div class="ligne1 row mx-0">
             <!-- produit 1 -->
-            <div class="produit col-4">
+            <div class="produit col-6 col-md-4">
                 <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -208,7 +223,7 @@
             </div>
 
             <!-- produit 2 -->
-            <div class="produit col-4">
+            <div class="produit col-6 col-md-4">
                 <img src="./public/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
 
                 <div class="row mx-0">
@@ -227,7 +242,7 @@
             </div>
 
             <!-- produit 3 -->
-            <div class="produit col-4">
+            <div class="produit col-12 col-md-4">
                 <img src="./public/img/products_mini/product-cups.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -241,7 +256,7 @@
         <!-- LIGNE 2 -->
         <div class="ligne2 row mx-0">
             <!-- produit 4 -->
-            <div class="produit col-4">
+            <div class="produit col-6 col-md-4">
                 <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid" alt="">
 
                 <div class="row mx-0">
@@ -260,7 +275,7 @@
             </div>
 
             <!-- produit 5 -->
-            <div class="produit col-4">
+            <div class="produit col-6 col-md-4">
                 <img src="./public/img/products_mini/product-tshitr.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -271,7 +286,7 @@
             </div>
 
             <!-- produit 6 -->
-            <div class="produit col-4">
+            <div class="produit col-12 col-md-4">
                 <img src="./public/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -285,7 +300,7 @@
         <!-- LIGNE 3 -->
         <div class="ligne3 row mx-0">
             <!-- produit 7 -->
-            <div class="produit col-4">
+            <div class="produit col-12 col-md-4">
                 <img src="./public/img/products_mini/product-modern-sofa.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -296,7 +311,7 @@
             </div>
 
             <!-- produit 8 -->
-            <div class="produit col-4">
+            <div class="produit col-6 col-md-4">
                 <img src="./public/img/products_mini/product-bed.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -307,7 +322,7 @@
             </div>
 
             <!-- produit 9 -->
-            <div class="produit col-4">
+            <div class="produit col-6 col-md-4">
                 <img src="./public/img/products_mini/product-shoes.jpg" class="img-fluid" alt="">
 
                 <div class="detail_produit text-center fw-bold py-4">
@@ -320,12 +335,14 @@
     </section>
 
     <!-- SECTION DISCOVER THOUSANDS -->
-    <section id="sec_discover" style="background-image: url(./public/img/cta-bg.jpg);">
-        <div class="d-flex justify-content-sm-center align-items-center" style="height: 800px;">
-            <div class="text-center">
-                <p>Discover Thousands Of Great Products</p>
-
-                <button class="btn ">LEARN MORE</button>
+    <section id="sec_discover" class="py-3 py-md-5" style="background-image: url(./public/img/cta-bg.jpg);">
+        <div class="d-flex justify-content-sm-center align-items-centerpy-3  pymd--5">
+            <div class="py-3 py-md-5">
+                <div class="text-center py-3 py-md-5">
+                    <p>Discover Thousands Of Great Products</p>
+    
+                    <button class="btn ">LEARN MORE</button>
+                </div>
             </div>
         </div>
     </section>
@@ -341,7 +358,7 @@
                 <!-- LIGNE 1 -->
                 <div class="ligne1 row mx-0">
                     <!-- produit 1 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -352,15 +369,15 @@
                     </div>
 
                     <!-- produit 2 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
 
                         <div class="row mx-0">
-                            <div class="col-2 d-flex justify-content-start align-items-center py-4">
+                            <div class="col-0 col-md-2 d-none d-md-flex justify-content-start align-items-center py-4">
                                 <p class="sale rounded-circle p-2 mb-0">SALE!</p>
                             </div>
 
-                            <div class="detail_produit d-flex justify-content-end fw-bold col-10 py-4">
+                            <div class="detail_produit d-flex justify-content-center justify-content-md-end fw-bold col-12 col-md-10 py-4">
                                 <div class="text-center">
                                     <p class="">Leather Gloves</p>
 
@@ -371,7 +388,7 @@
                     </div>
 
                     <!-- produit 3 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-cups.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -382,15 +399,15 @@
                     </div>
 
                     <!-- produit 4 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid" alt="">
 
                         <div class="row mx-0">
-                            <div class="col-2 d-flex justify-content-start align-items-center py-4">
+                            <div class="col-0 col-md-2 d-none d-md-flex justify-content-start align-items-center py-4">
                                 <p class="sale rounded-circle p-2 mb-0">SALE!</p>
                             </div>
 
-                            <div class="detail_produit d-flex justify-content-end fw-bold col-10 py-4">
+                            <div class="detail_produit d-flex justify-content-center justify-content-md-end fw-bold col-12 col-md-10 py-4">
                                 <div class="text-center">
                                     <p class="">Women Bag</p>
 
@@ -407,7 +424,7 @@
                 <!-- LIGNE 2 -->
                 <div class="ligne2 row mx-0">
                     <!-- produit 5 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-tshitr.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -418,7 +435,7 @@
                     </div>
 
                     <!-- produit 6 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -429,7 +446,7 @@
                     </div>
 
                     <!-- produit 7 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-modern-sofa.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -440,7 +457,7 @@
                     </div>
 
                     <!-- produit 8 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-bed.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -456,7 +473,7 @@
             <div class="mySlides fade">
                 <div class="ligne2 row mx-0">
                     <!-- produit 9 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-shoes.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -467,7 +484,7 @@
                     </div>
 
                     <!-- produit 10 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products/product-bag-2-700x500.jpg" class="img-fluid"
                             style="height: 178px;" alt="">
 
@@ -479,7 +496,7 @@
                     </div>
 
                     <!-- produit 11 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products/product-bag-700x500.jpg" class="img-fluid"
                             style="height: 178px;" alt="">
 
@@ -491,7 +508,7 @@
                     </div>
 
                     <!-- produit 12 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products/product-jacket-700x500.jpg" class="img-fluid"
                             style="height: 178px;" alt="">
 
@@ -508,7 +525,7 @@
             <div class="mySlides fade">
                 <div class="ligne2 row mx-0">
                     <!-- produit 13 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products/product-shoes-700x500.jpg" class="img-fluid"
                             style="height: 178px;" alt="">
 
@@ -520,7 +537,7 @@
                     </div>
 
                     <!-- produit 14 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products/product-tshitr-700x500.jpg" class="img-fluid"
                             style="height: 178px;" alt="">
 
@@ -532,7 +549,7 @@
                     </div>
 
                     <!-- produit 15 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products/product-tshitr-white-700x500.jpg" class="img-fluid"
                             style="height: 178px;" alt="">
 
@@ -544,7 +561,7 @@
                     </div>
 
                     <!-- produit 12 -->
-                    <div class="produit col-3">
+                    <div class="produit col-6 col-md-3">
                         <img src="./public/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
 
                         <div class="detail_produit text-center fw-bold py-4">
@@ -575,13 +592,13 @@
     <section id="sec_footer">
         <div class="publications row mx-0 pb-5">
             <!-- HOVER 1 -->
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="publication1 text-center py-5 px-5">
-                    <i id="logo-font1" class="far fa-check-circle fs-3 pb-5"></i>
+                    <i id="logo-font1" class="far fa-check-circle fs-3 pb-4 pb-xl-5"></i>
 
-                    <p class="fw-bold pb-4">TRSUTED BY 10,000+ CUSTOMERS</p>
+                    <p class="fw-bold pb-4 pb-xl-4">TRSUTED BY 10,000+ CUSTOMERS</p>
 
-                    <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
+                    <p class="d-none d-lg-block pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
                         molestiae beatae harum eius nostrum dolores ut.</p>
 
                     <button class="btn">LEARN MORE</button>
@@ -589,13 +606,13 @@
             </div>
 
             <!-- HOVER 2 -->
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="publication2 text-center py-5 px-5">
                     <i id="logo-font2" class="fas fa-paper-plane fs-3 pb-5"></i>
 
                     <p class="fw-bold pb-4">VERY FAST SHIPPING</p>
 
-                    <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
+                    <p class="d-none d-lg-block pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
                         molestiae beatae harum eius nostrum dolores ut.</p>
 
                     <button class="btn">LEARN MORE</button>
@@ -603,13 +620,13 @@
             </div>
 
             <!-- HOVER 3 -->
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="publication3 text-center py-5 px-5">
-                    <i id="logo-font3" class="far fa-check-circle fs-3 pb-5"></i>
+                    <i id="logo-font3" class="far fa-check-circle fs-3 pb-4 pb-xl-5"></i>
 
-                    <p class="fw-bold pb-4">TRSUTED BY 10,000+ CUSTOMERS</p>
+                    <p class="fw-bold pb-4 pb-xl-4">TRSUTED BY 10,000+ CUSTOMERS</p>
 
-                    <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
+                    <p class="d-none d-lg-block pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perferendis
                         molestiae beatae harum eius nostrum dolores ut.</p>
 
                     <button class="btn">LEARN MORE</button>
@@ -623,7 +640,7 @@
         <!-- HAUT-FOOTER -->
         <div id="haut_footer" class="bg-dark">
             <div class="container row mx-auto py-5">
-                <div class="about_us col-4">
+                <div class="about_us text-center text-lg-start col-12 col-md-6 col-lg-4">
                     <p class="text-light pb-3">ABOUT US</p>
 
                     <P class="text-secondary">A wonderful serenity has taken possession of my entire soul, like these
@@ -631,7 +648,7 @@
                         existence in this spot, which was created for the bliss of</P>
                 </div>
 
-                <div class="recents_posts col-4">
+                <div class="recents_posts text-center text-lg-start col-12 col-md-6 col-lg-4 pt-5 pt-md-0">
                     <p class="text-light pb-3">RECENTS POSTS</p>
 
                     <ul class="text-light lh-lg p-0" style="list-style-type: none;">
@@ -645,7 +662,7 @@
                     </ul>
                 </div>
 
-                <div class="tag_cloud col-4">
+                <div class="tag_cloud text-center text-lg-start col-12 col-lg-4 mt-5 mt-lg-0">
                     <p class="text-light pb-3">TAG CLOUD</p>
 
                     <div>

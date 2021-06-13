@@ -1,14 +1,14 @@
 // SECTION SHOT AT EMPORIUM
 .bg_image1 {
+    background-color: $baniereColor;
+
     div:nth-of-type(1) {
         background-color: $baniereColor;
     }
     div:nth-of-type(2) {
         background-color: $baniereColor;
 
-        p:nth-of-type(1) {
-            font-size: 50px;
-    
+        h1 {
             color: $pamplemousse;
         }
         img {
