@@ -13,7 +13,7 @@ setInterval( () => {
     if (current_slide == 5) {
         current_slide = 1;
     }
-}, 200000);
+}, 5000);
 
 
 
@@ -36,6 +36,7 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+    
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += " active";

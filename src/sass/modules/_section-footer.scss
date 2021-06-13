@@ -2,6 +2,7 @@
     div {
         .publication1 {
             background-color: $light;
+            color: black;
 
             p:nth-of-type(2) {
                 color: $secondary;
@@ -29,6 +30,7 @@
     div {
         .publication2 {
             background-color: $light;
+            color: $dark;
 
             p:nth-of-type(2) {
                 color: $secondary;
@@ -56,6 +58,7 @@
     div {
         .publication3 {
             background-color: $light;
+            color: $dark;
 
             p:nth-of-type(2) {
                 color: $secondary;
