@@ -1,7 +1,7 @@
 // MODE SOMBRE
 let titre = document.querySelector('#titre span');
 let nav = document.querySelector('nav');
-let toggle = document.querySelector('#hamburger');
+let toggle = document.querySelector('#hamburger').parentElement;
 let nav_a = Array.from(document.querySelectorAll('nav a'));
 console.log(titre);
 

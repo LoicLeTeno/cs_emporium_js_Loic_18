@@ -16735,3 +16735,9 @@ footer #copyright {
   background-color: white;
   color: #212529;
 }
+
+@media screen and (max-width: 425px) {
+  .modal-content {
+    width: 100%;
+  }
+}
