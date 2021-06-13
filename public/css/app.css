@@ -16392,6 +16392,10 @@ header #titre span {
   font-size: 8px;
 }
 
+header nav {
+  background-color: white;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -16467,8 +16471,8 @@ footer #copyright {
 }
 
 .bg_image1 div:nth-of-type(3) {
+  background-color: #f3f3f3;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .bg_image1 div:nth-of-type(4) {
@@ -16508,31 +16512,31 @@ footer #copyright {
   width: 50px;
 }
 
-#sec_products_cards .ligne1 .produit2 .sale {
+#sec_products_cards .ligne1 .produit .sale {
   background-color: #e6443f;
   color: white;
   line-height: 40px;
 }
 
-#sec_products_cards .ligne1 .produit2 div p:nth-child(2) {
+#sec_products_cards .ligne1 .produit div p:nth-child(2) {
   color: #e6443f;
 }
 
-#sec_products_cards .ligne1 .produit2 div p:nth-child(2) s {
+#sec_products_cards .ligne1 .produit div p:nth-child(2) s {
   color: grey;
 }
 
-#sec_products_cards .ligne2 .produit4 .sale {
+#sec_products_cards .ligne2 .produit .sale {
   background-color: #e6443f;
   color: white;
   line-height: 40px;
 }
 
-#sec_products_cards .ligne2 .produit4 div p:nth-child(2) {
+#sec_products_cards .ligne2 .produit div p:nth-child(2) {
   color: #e6443f;
 }
 
-#sec_products_cards .ligne2 .produit4 div p:nth-child(2) s {
+#sec_products_cards .ligne2 .produit div p:nth-child(2) s {
   color: grey;
 }
 
@@ -16541,7 +16545,6 @@ footer #copyright {
 }
 
 #sec_discover {
-  background-image: url(../../../public/img/cta-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16608,6 +16611,38 @@ footer #copyright {
   to {
     opacity: 1;
   }
+}
+
+.ligne1 .produit .sale {
+  background-color: #e6443f;
+  color: white;
+  line-height: 40px;
+}
+
+.ligne1 .produit div p:nth-child(2) {
+  color: #e6443f;
+}
+
+.ligne1 .produit div p:nth-child(2) s {
+  color: grey;
+}
+
+.ligne2 .produit .sale {
+  background-color: #e6443f;
+  color: white;
+  line-height: 40px;
+}
+
+.ligne2 .produit div p:nth-child(2) {
+  color: #e6443f;
+}
+
+.ligne2 .produit div p:nth-child(2) s {
+  color: grey;
+}
+
+.prix {
+  color: #e6443f;
 }
 
 #sec_footer div .publication1 {

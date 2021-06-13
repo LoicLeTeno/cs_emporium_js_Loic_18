@@ -1,3 +1,7 @@
+
+
+
+// CAROUSEL
 #sec_hot_fashion {
     * {
         box-sizing: border-box
@@ -59,4 +63,45 @@
             opacity: 1
         }
     }
+}
+
+// CARDS
+.ligne1 {
+    .produit {
+        .sale {
+            background-color: $pamplemousse;
+            color: white;
+
+            line-height: 40px;
+        }
+        div {
+            p:nth-child(2) {
+                s {
+                    color: grey;
+                }
+                color: $pamplemousse;
+            }
+        }
+    }
+}
+.ligne2 {
+    .produit {
+        .sale {
+            background-color: $pamplemousse;
+            color: white;
+
+            line-height: 40px;
+        }
+        div {
+            p:nth-child(2) {
+                s {
+                    color: grey;
+                }
+                color: $pamplemousse;
+            }
+        }
+    }
+}
+.prix {
+    color: $pamplemousse;
 }

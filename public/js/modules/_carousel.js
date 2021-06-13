@@ -13,7 +13,7 @@ setInterval( () => {
     if (current_slide == 5) {
         current_slide = 1;
     }
-}, 2000);
+}, 200000);
 
 
 
